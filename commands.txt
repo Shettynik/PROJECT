@@ -1,0 +1,37 @@
+---------------- TERMINAL 1 -----------------------
+1. cd into myblockchain folder
+
+2.TEMRINAL 1 commands-
+geth --datadir blkchain1 init genesis.json
+
+geth --identity "localB" --http --http.port 8042 --http.corsdomain "*" --http.api "db,eth,net,web3" --datadir blkchain1 --port "30303" --nodiscover --networkid 1999 console --allow-insecure-unlock  
+
+personal.listAccounts
+
+
+address: 0x7a757378f1829905322fbfd37084adf09c68324
+enode :
+http port: 8042
+node: 30303
+rpc-port: default
+
+
+---------------- TERMINAL 2 -----------------------
+
+3.TERMINAL 2 commands-
+geth --datadir blkchain2 init genesis.json
+
+geth --identity "localB" --http --http.port 8043 --http.corsdomain "*" --http.api "db,eth,net,web3" --datadir blkchain2 --port "30304" --authrpc.port 8547 --nodiscover --networkid 1999 --ipcdisable console --allow-insecure-unlock 
+
+personal.listAccounts
+
+address: 
+enode: 
+http port: 8043
+node: 30304
+rpc-port: 8547
+
+
+Sample Data Points:
+SET 1: 1,100
+0x3100000000000000000000000000000000000000000000000000000000000000, 100, 0x3130300000000000000000000000000000000000000000000000000000000000, 1676965404, 0x6d756d6261690000000000000000000000000000000000000000000000000000, 0x5F17d3B125792292F98f024DF93C6A4549B264d9

@@ -1,0 +1,17 @@
+geth --datadir managerLocal init genesis.json
+
+geth --identity "localB" --http --http.port 8051 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir managerLocal --port "30401" --authrpc.port 8530 --nodiscover --networkid 200 --ipcdisable console --allow-insecure-unlock
+
+
+geth --datadir sensorLocal init genesis.json
+
+geth --identity "localB" --http --http.port 8052 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir sensorLocal --port "30402" --authrpc.port 8531 --nodiscover --networkid 200 --ipcdisable console --allow-insecure-unlock
+
+
+-- Details --
+
+managerLocal: "0xb2c92adb7f80dc2be35c30fb19b2388dfc263a9d"
+
+sensorLocal: "0x51a3a421d1ee0cd4c87bb4d6757533a51d92df34"
+
+SmartContractLocal:

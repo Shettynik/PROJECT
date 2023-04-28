@@ -1,0 +1,23 @@
+geth --datadir mumbai init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.51" --http.port 9041 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir mumbai --port "30901" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8540 console --allow-insecure-unlock
+
+"enode://f6568c757efcdee4577e3338a97cc73b1c7fc6ef9a788cd3765c29f755ac0ffff513a15b0719d47f0c5e441b21b2c0e484192c26b963844fa8e787994e8aafce@172.17.22.51:30901?discport=0"
+
+
+geth --datadir pune init genesis.json
+
+geth --identity "localB" --http --http.addr "172.17.22.52" --http.port 9042 --http.corsdomain "*" --http.api "db,eth,net,web3,personal" --datadir pune --port "30902" --nodiscover --networkid 1999 --ipcdisable --authrpc.port 8541 console --allow-insecure-unlock
+
+"enode://84c5e160fc3e9a55ae7000fd8b8bf5b00398c6672aba1eebc61473e741a8811f92f88583b0e7f5deebc625f436f0adabb2f96a6f2847b701f03b0c55b1129344@172.17.22.52:30902?discport=0"
+
+
+
+--- Details -- 
+
+MumbaiGlobal: "0x259b9dae53619179fbe4aa399812c8ecdcb5cf23"
+
+PuneGlobal: "0x6588d7462c8a44e6a025b484ceba79283ac14229"
+
+SmartContractGlobal: 
+

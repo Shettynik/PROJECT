@@ -1,0 +1,5 @@
+
+
+// Goto Contracts and run
+// solcjs -o build --bin farmDataPath.solc
+// solcjs -o build --abi farmDataPath.solc

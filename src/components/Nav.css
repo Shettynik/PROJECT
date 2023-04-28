@@ -1,0 +1,73 @@
+body{
+    background: url(../images/IoTLive.jpg) no-repeat fixed;/*IoT_LiveWorx.jpg); /**/
+    color: white;
+    background-size: cover;
+  }
+
+
+.header{
+    display:flex;
+    border: 1px solid white;
+    padding: 12px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+  }
+
+  h1{
+    align-items: flex-start;
+    display: inline-block;
+    color: white;
+  }
+
+  .myinfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 14px 20px 0 0;
+  }
+
+  .nav{
+    padding: 10px;
+    background-color: white;
+    /* rgba(0,0,0,0.7); */
+    margin: 0px;
+    font-size: 16px;
+  }
+  .nav-opt{
+    text-decoration: none;
+    display:inline-block;
+    margin: 2px;
+    padding:10px;
+    height: 100%;
+    background-color: rgba(192, 57, 43,1.0);
+    /* 
+    #c0392b;
+    #013243; 
+    */
+    color: white;
+    border: none;
+  }
+
+  #profile{
+    display: block;
+    /*width:100%;*/
+    height: auto;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    padding: 12px;
+    margin: 2px 0;
+    background-color: rgba(0,0,0,0.8);
+    border: 5px solid white;
+  }
+  
+  /* #profile-btn {
+    background-color: #013243;
+  } */
+
+  .extra_buttons{
+    text-decoration: none;
+    padding:5px 10px;
+    background-color: #013243;
+    color: white;
+  }
+
